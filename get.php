@@ -19,14 +19,19 @@ if($caste=='st'){
 }
 $result=mysqli_query($conn,$querry);
 
-
 echo "<table border='1'>
 
 <tr>
 
-<th>collage name</th>
+<th>Collage Name</th>
 
-<th>course name</th>
+<th>Course Name</th>
+<th>Rank</th>
+<th>city</th>
+<th>OC</th>
+<th>BC</th>
+<th>ST</th>
+
 
 </tr>";
 
@@ -39,9 +44,11 @@ while ($row = mysqli_fetch_array($result)) {
     echo "<td>" . $row['collegename'] . "</td>";
 
     echo "<td>" . $row['coursename'] . "</td>";
-    echo "<td>" . $row['coursename'] . "</td>";
-    echo "<td>" . $row['coursename'] . "</td>";
-    echo "<td>" . $row['coursename'] . "</td>";
+    echo "<td>" . $row['rank'] . "</td>";
+    echo "<td>" . $row['city'] . "</td>";
+    echo "<td>" . $row['oc'] . "</td>";
+    echo "<td>" . $row['oc'] . "</td>";
+    echo "<td>" . $row['st'] . "</td>";
     
 
 
@@ -49,6 +56,3 @@ while ($row = mysqli_fetch_array($result)) {
 }
 
 echo "</table>";
-
-
-
