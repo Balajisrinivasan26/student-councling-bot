@@ -19,7 +19,9 @@ if($caste=='st'){
 }
 $result=mysqli_query($conn,$querry);
 
-echo "<table border='1'>
+echo "
+<h1>welcome, $username</h1>
+<table border='1'>
 
 <tr>
 
@@ -47,7 +49,7 @@ while ($row = mysqli_fetch_array($result)) {
     echo "<td>" . $row['rank'] . "</td>";
     echo "<td>" . $row['city'] . "</td>";
     echo "<td>" . $row['oc'] . "</td>";
-    echo "<td>" . $row['oc'] . "</td>";
+    echo "<td>" . $row['bc'] . "</td>";
     echo "<td>" . $row['st'] . "</td>";
     
 
